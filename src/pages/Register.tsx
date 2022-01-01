@@ -51,7 +51,7 @@ export default function Register() {
 					style={{ paddingVertical: 10, paddingBottom, flexGrow: isMobile ? 1 : 0, display: "flex", justifyContent: "flex-end" }}
 				>
 					<Button style={{ margin: 0 }} onPress={() => navigate("/")}>
-						<Text>Register on fosscord.com</Text>
+						<Text>Register on fosscord.com</Text> // TODO: Make fosscord.com change depending on the selected instance.
 					</Button>
 				</View>
 			</KeyboardAvoidingView>

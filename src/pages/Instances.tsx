@@ -51,6 +51,13 @@ export default observer(function Instances() {
 					style={{ flexGrow: 1 }}
 				>
 					{Object.values(instances.cache || {}).map((x) => (
+						// Summary:
+						// When button is pressed, output "press" with the information of position and etc..
+						// make i.selected false
+						// and x.selected true
+						// the selected button or instance (x.selected) changes its style to another color (bg-accent)
+						// Instances are loaded from a json list in data/Instances.ts
+						// The image is pulled from the instance's json list or if the instance does not have one, return to the default one.
 						<Pressable
 							onPress={(e) => {
 								console.log("press", e);
@@ -76,7 +83,7 @@ export default observer(function Instances() {
 						>
 							{console.log(x.selected)}
 							<Image
-								source={x?.image || "https://raw.githubusercontent.com/fosscord/fosscord/master/assets/logo.png"}
+								source={x?.image || "https://cdn.discordapp.com/attachments/806142446529806367/924773588358266961/fosscord.png"} // boomerang loogo
 								style={{ width: 60, height: 60 }}
 							/>
 							<Text className="text-accent" style={{ textAlign: "center", fontWeight: "300", fontSize: 15, marginTop: 10 }}>

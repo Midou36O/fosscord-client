@@ -16,7 +16,8 @@ export default function NotFound() {
 					<Link to="/login">Login</Link>
 					<Link to="/register">Register</Link>
 					<Link to="/instances">Instances</Link>
-					<Button>Test</Button>
+					<Link to="/Themes/Editor">Themes</Link>
+					
 				</View>
 			</View>
 		</SafeAreaView>
